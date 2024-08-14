@@ -14,7 +14,7 @@ export default function Counter({
 
 	return (
 		<>
-			<div className="counter">
+			<div className="counter text-red-200">
 				<button onClick={subtract}>-</button>
 				<pre>{count}</pre>
 				<button onClick={add}>+</button>
