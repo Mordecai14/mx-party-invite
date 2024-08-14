@@ -3,38 +3,56 @@
 ---
 
     <div class="w-full text-center mt-10 relative">
-        <div>
-            <p class="text-3xl pt-20">
-                No time to siesta and... <br />
+        <div class="">
+            <p class="text-3xl pt-20 px-[20px]">
+                No time to siesta <br />and... <br />
             </p>
             <p
                 class="animate-charcter text-4xl mt-3"
             >
                 VIVA LA FIESTA!
             </p>
-            <h1 class="mt-10 text-xl">Acompañanos a Celebrear <br/>el cumpleaños de:</h1>
-            <img
+            <p class="mt-10 text-xl">Vamos a celebrear el<br/>cumpleaños de:</p>
+            <div class="logo-bg">
+                <img
                 src="../../src/assets/farith_logo.png"
                 alt="Farith"
-                class="relative z-1 p-0 -my-10"
-            />
+                class="drop relative z-1 p-0 -my-3"
+                />
+            </div>
         </div>
-        <img src="../../src/assets/Deco1.png" alt="deco" class="img-l absolute top-0"/>
-        <img src="../../src/assets/Deco1.png" alt="deco" class="img-r absolute top-0"/>
+        <img src="../../src/assets/Deco1.png" alt="deco" class="img-c absolute top-0"/>
+        <img src="../../src/assets/Flores1.png" alt="deco" class="img-flor-l absolute top-0"/>
+        <img src="../../src/assets/Flores1.png" alt="deco" class="img-flor-r absolute top-0"/>
+
+
+        
+        <div class="boxC relative flex w-full justify-center items-center mt-[25px] py-5">
+            <img src="../../src/assets/Cactus1.png" alt="deco" class="w-[33%] animate-wiggle animate-infinite animate-duration-[2000ms] animate-ease-in-out"/>
+            <img src="../../src/assets/Avocado.png" alt="deco" class="w-[33%] animate-wiggle animate-infinite animate-duration-[1500ms] animate-ease-in"/>
+            <img src="../../src/assets/chile.png" alt="deco" class="w-[33%] animate-wiggle animate-infinite animate-duration-[1100ms] animate-ease-linear"/>
+        </div>
+
     </div>
 
 <style>
+    .boxC{
+        background-image: url("../assets/fondoMini.png");
+        background-position: center;
+        background-size: cover;
+    }
     .drop{
-        filter: drop-shadow(5px 5px 10px #09ce96b5);
+        filter: drop-shadow(5px 5px 10px #000000b5);
     }
     .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
         #0fc80c 0%,
-        #ffffff 15%,
-        #ff1361 88%,
-        #0fc80c 100%
+        #0fc80c 30%,
+        #ffffff 50%,
+        #ff1361 70%,
+        #ff1361 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -62,16 +80,34 @@
         transform: scale(1.2);
     }
 }
-.img-l{
-    transform: translate(-40%, -48%) rotate(-5deg);
+.img-c{
+    transform: translate(50%, -53%);
     width: 251px;
     z-index: -1;
     opacity: 0.8;
+    right: 50%
 }
-.img-r{
-    transform: translate(80%, -48%) rotate(5deg);
-    width: 251px;
+
+.img-flor-l{
+    transform: translate(-62%, -10%) rotate(-111deg);
+    width: 161px;
     z-index: -1;
-    opacity: 0.8;
+    left: 0;
+    top: 0%;
 }
+.img-flor-r{
+    transform: translate(62%, -10%) rotate(21deg);
+    width: 161px;
+    z-index: -1;
+    right: 0;
+    top: 0%;
+}
+.logo-bg{
+    /* background-image: url("../assets//Deco2.png"); */
+    width: 100%;
+    padding: 0 10px;
+    background-size: cover;
+    background-position: center;
+}
+
 </style>
