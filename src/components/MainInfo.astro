@@ -2,62 +2,76 @@
 
 ---
 
-<div>
-    <div class="w-full text-center mt-10">
-        <div class="text-2xl">
-            <h2>
+    <div class="w-full text-center mt-10 relative">
+        <div>
+            <p class="text-3xl pt-20">
                 No time to siesta and... <br />
-            </h2>
-            <h2
-                class="animate-charcter text-4xl mt-2"
+            </p>
+            <p
+                class="animate-charcter text-4xl mt-3"
             >
                 VIVA LA FIESTA!
-            </h2>
-            <h1 class="mt-10">Acompañanos a Celebrear el cumpleaños de:</h1>
+            </p>
+            <h1 class="mt-10 text-xl">Acompañanos a Celebrear <br/>el cumpleaños de:</h1>
             <img
                 src="../../public/assets/farith_logo.png"
                 alt="Farith"
-                class="p-0 -mt-10"
+                class="relative z-1 p-0 -my-10"
             />
-            <div></div>
         </div>
-
-        <style>
-            .animate-charcter {
-            text-transform: uppercase;
-            background-image: linear-gradient(
-                -225deg,
-                #0fc80c 0%,
-                #ffffff 15%,
-                #ff1361 88%,
-                #0fc80c 100%
-            );
-            background-size: auto auto;
-            background-clip: border-box;
-            background-size: 200% auto;
-            color: #fff;
-            background-clip: text;
-            text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textclip 2s linear infinite, jump 1s ease-in-out infinite;
-            display: inline-block;
-        }
-
-        @keyframes textclip {
-            to {
-                background-position: 200% center;
-            }
-        }
-
-        @keyframes jump {
-            0%, 100% {
-                transform: scale(0.9);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-        </style>
+        <img src="../../public/assets/Deco1.png" alt="deco" class="img-l absolute top-0"/>
+        <img src="../../public/assets/Deco1.png" alt="deco" class="img-r absolute top-0"/>
     </div>
-</div>
+
+<style>
+    .drop{
+        filter: drop-shadow(5px 5px 10px #09ce96b5);
+    }
+    .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #0fc80c 0%,
+        #ffffff 15%,
+        #ff1361 88%,
+        #0fc80c 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite, jump 1s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+.img-l{
+    transform: translate(-40%, -48%) rotate(-5deg);
+    width: 251px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.img-r{
+    transform: translate(80%, -48%) rotate(5deg);
+    width: 251px;
+    z-index: -1;
+    opacity: 0.8;
+}
+</style>

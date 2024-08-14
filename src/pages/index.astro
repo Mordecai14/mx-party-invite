@@ -36,28 +36,36 @@ import MainInfo from "../components/MainInfo.astro";
 				padding: 0;
 				height: 100%;
 				background-color: #000;
-			}
-			body {
 				display: flex;
 				justify-content: center;
-				background-color: #000;
+				background-image: url("/assets/fondo2MiniOpacity.png");
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				backdrop-filter: blur(10px);
 			}
+
+			* {
+				box-sizing: border-box;
+			}
+
 			main {
-				background-color: #000;
 				padding: 0 2rem 2rem 2rem;
 				width: 100%;
 				max-width: 600px;
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+				z-index: 1;
 			}
 		</style>
 	</head>
 	<body>
 		<main class="text-white">
-			<Pinata />
+			<!-- <Pinata /> -->
 			<MainInfo />
-			<div>Diseños</div>
-			<div>Información general</div>
-			<div>Footer</div>
+			<div class="h-[500px]">Diseños</div>
+			<div class="h-[500px]">Información general</div>
+			<div class="h-[500px]">Footer</div>
 		</main>
 	</body>
 </html>
